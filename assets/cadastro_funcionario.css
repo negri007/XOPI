@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(195 195 195);;
+}
+
+header .container{
+    height: 5.5em;
+    background-color: orangered;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5em;
+    position: absolute;
+    margin-right: 104em;
+    
+}
+
+header .logo img{
+    width: 4.2em;
+    height: 4.2em;
+    position: relative;
+    margin-bottom: 0.6em;
+    
+}
+
+header .h1Logo{
+    color: white;
+    margin-bottom: 0.05em;
+    font-size: 3em;
+    position: relative;
+    margin-top: 0.55em;
+    margin-left: 0.1em;
+}
+
+header .container a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav{
+    height: 3.6em;
+    background-color: rgb(251 119 48);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80em;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    margin-top: 1.8em;
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.6em;
+}
+
+form h1{
+    color: orangered;
+    margin-top: 1.4em;
+    margin-bottom: 1.5em;
+    position: relative;
+    margin-right: 6.1em;
+    font-size: 1.7em;
+}
+
+form input{
+    margin-bottom: 2em;
+    border: 0.08em solid gainsboro;
+    padding: 1em 2em;
+    width: 34em;
+    border-radius: 0.30em;
+}
+
+form h2{
+    color: orangered;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+form .enviar-foto{
+    width: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+    margin-bottom: 2.1em;
+}
+
+form .enviar-foto button{
+    color: orangered;
+    background-color: white;
+    border: 1px solid orangered;
+    border-radius: 0.5em;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+
+}
+
+form .enviar-foto p{
+    font-size: 1em;
+}
+
+form .cadastrar{
+    font-size: 1.1em;
+    color: white;
+    background-color: orangered;
+    width: 26em;
+    padding: 0.6em 1em;
+}
+
+footer{
+    margin-top: 1.8em;
+    background-color: rgb(245,245,245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .informacao-footer{
+    width: 97em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .informacao-footer h1{
+    margin-top: 4em;
+    margin-bottom: 2.1em;
+    font-size: 0.93em;
+    color: black;
+}
+
+footer .informacao-footer .sociais{
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    gap: 0.5em;
+}
+
+footer .informacao-footer img{
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+}
+
+footer .informacao-footer p{
+    color: rgb(97,94,97);
+    font-size: 0.91em;
+    margin-bottom: 0.7em;
+}
+
+footer .informacao-footer .cartao-logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.4em;
+}
+
+footer .informacao-footer .cartao-logos img{
+    width: 3.90em;
+    background-color: white;
+}
+
+footer .informacao-footer .app-qrcode{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8em;
+}
+
+footer .linha{
+    margin-top: 4em;
+    width: 99em;
+    border: 0.06em solid rgb(173, 169, 169);
+}
+
+footer .copyright{
+    margin-top: 1.25em;
+}
+
+footer .copyright p{
+    margin-bottom: 1.8em;
+    color: black;
+}
+
+#fazer-login {
+    font-size: 18px;
+}
