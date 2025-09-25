@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../assets/produtos.css">
+    <link rel="shortcut icon" href="../assets/img/icon-shopee.png">
+    <script type="text/javascript" src="../assets/produto.js"></script>
+    <title>Produto</title>
+</head>
+
+<body>
+    <header class="topo-site">
+        <div class="area-logo">
+            <img src="../assets/img/logo.png" alt="logo">
+            <h1>Xhopii</h1>
+        </div>
+        <a href="login.html">
+            <p>Sair</p>
+        </a>
+    </header>
+
+    <nav class="navegacao">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cadastro-cliente.html">Cadastro Cliente</a></li>
+            <li><a href="cadastro-funcionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastro-produto.html">Cadastro Produto</a></li>
+            <li><a href="cliente-cadastrado.html">Ver Clientes</a></li>
+            <li><a href="funcionario-cadastrado.html">Ver Funcionário</a></li>
+            <li><a href="ver-produtos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-produto">
+        <section class="galeria-imagens">
+            <div class="miniaturas">
+                <img src="../assets/img/produto1.png" id="corPreto" onclick="trocarImagemSelecionada(this)">
+                <img src="../assets/img/produto2.png" id="corAzul" onclick="trocarImagemSelecionada(this)">
+                <img src="../assets/img/produto3.png" id="corVerde" onclick="trocarImagemSelecionada(this)">
+                <img src="../assets/img/produto4.png" id="corCinza" onclick="trocarImagemSelecionada(this)">
+                <img src="../assets/img/produto5.png" id="corRosa" onclick="trocarImagemSelecionada(this)">
+            </div>
+            <div class="imagem-destaque">
+                <img id="imagemPrincipal" src="../assets/img/produto1.png">
+            </div>
+        </section>
+
+        <section class="informacoes-produto">
+            <h1>Camisa Desenvolvedor Front-End CSS</h1>
+            <h2 id="precoAtual">R$56,90</h2>
+            <p id="estoqueDisponivel">171 peças disponíveis</p>
+
+            <p>Modelos:</p>
+            <button class="botao-personalizado" id="btnCorPreto" onclick="atualizarProdutoPorCor(this)">Preto</button>
+            <button class="botao-personalizado" id="btnCorAzul" onclick="atualizarProdutoPorCor(this)">Azul</button>
+            <button class="botao-personalizado" id="btnCorVerde" onclick="atualizarProdutoPorCor(this)">Verde</button>
+            <button class="botao-personalizado" id="btnCorCinza" onclick="atualizarProdutoPorCor(this)">Cinza</button>
+            <button class="botao-personalizado" id="btnCorRosa" onclick="atualizarProdutoPorCor(this)">Rosa</button>
+
+            <p>Tamanhos:</p>
+            <button class="botao-personalizado" id="btnTamP" onclick="ajustarEstoquePorTamanho(this)">P</button>
+            <button class="botao-personalizado" id="btnTamM" onclick="ajustarEstoquePorTamanho(this)">M</button>
+            <button class="botao-personalizado" id="btnTamG" onclick="ajustarEstoquePorTamanho(this)">G</button>
+            <button class="botao-personalizado" id="btnTamGG" onclick="ajustarEstoquePorTamanho(this)">GG</button>
+
+            <p id="tamanhoAtual">Tamanho Selecionado: P</p>
+            <button id="comprarAgora">Comprar Agora</button>
+        </section>
+    </main>
+</body>
+
+</html>
