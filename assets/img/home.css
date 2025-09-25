@@ -68,29 +68,42 @@ header p {
     background-color: rgb(251, 86, 48);
     transition: 0.5s;
 }
+
 .secao-carrossel {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 5vh;
-    max-width: 800px;
+    width: 70%px;   
+    max-width: 1700px;    
+    margin: 5em auto;   
 }
+.secao-carrossel .carousel-inner img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.secao-carrossel .carousel-inner img {
+    width: 100%;           
+    height: auto;         
+}
+
 .descobertas-frete {
     margin: 0 auto;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
+    max-width: 80%;
     align-items: center;
 }
 .descobertas-frete img {
     width: 100%;
     margin-bottom: 20px;
-    max-width: 850px;
+    max-width: 80%;
 }
 .descobertas-frete p {
     color: rgb(251, 86, 48);
     margin-bottom: 20px;
     text-transform: uppercase;
+
 }
 #separador-descobertas {
     border: solid rgb(251, 86, 48) 1px;
