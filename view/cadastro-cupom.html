@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Cupom</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/produtos.css">
+  <link rel="stylesheet" href="../assets/cupom.css">
+  <link rel="shortcut icon" href="../assets/img/icon-shopee.png">
+</head>
+<body>
+  <header class="topo-site">
+    <div class="area-logo">
+      <img src="../assets/img/logo.png" alt="logo">
+      <h1>Xhopii</h1>
+    </div>
+    <a href="login.html"><p>Sair</p></a>
+  </header>
+
+  <nav class="navegacao">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="cadastro-cliente.html">Cadastro Cliente</a></li>
+      <li><a href="cadastro-funcionario.html">Cadastro Funcionário</a></li>
+      <li><a href="cadastro-produto.html">Cadastro Produto</a></li>
+      <li><a href="cliente-cadastrado.html">Ver Clientes</a></li>
+      <li><a href="funcionario-cadastrado.html">Ver Funcionário</a></li>
+      <li><a href="ver-produtos.html">Ver Produtos</a></li>
+    </ul>
+  </nav>
+
+  <main class="container-produto">
+    <section class="informacoes-produto">
+      <h1>Cadastrar Cupom</h1>
+
+      <form id="formCupom">
+        <p>
+          <label for="codigo">Código do Cupom:</label><br>
+          <input type="text" id="codigo" name="codigo" required>
+        </p>
+
+        <p>
+          <label for="desconto">Desconto (%):</label><br>
+          <input type="number" id="desconto" name="desconto" min="1" max="100" required>
+        </p>
+
+        <p>
+          <label for="validade">Data de Validade:</label><br>
+          <input type="date" id="validade" name="validade" required>
+        </p>
+
+        <button type="submit" class="botao-personalizado">Cadastrar Cupom</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../assets/cadastro-cupom.js"></script>
+</body>
+</html>

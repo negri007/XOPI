@@ -1,0 +1,65 @@
+
+.container-produto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 40px 0;
+}
+
+.informacoes-produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+
+.informacoes-produto h1 {
+  font-size: 24px;
+  color: rgb(251, 86, 48);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form#formCupom label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form#formCupom input[type="text"],
+form#formCupom input[type="number"],
+form#formCupom input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  transition: border 0.2s;
+}
+
+form#formCupom input:focus {
+  border-color: rgb(251, 86, 48);
+  outline: none;
+}
+
+.botao-personalizado {
+  width: 100%;
+  background-color: rgb(251, 86, 48);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-personalizado:hover {
+  background-color: rgb(230, 70, 35);
+}
