@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/icon-shopee.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../assets/home.css">
+    <link rel="stylesheet" href="../assets/visualizar-clientes.css">
+    <title>Visualizar Clientes</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../assets/img/logo.png" alt="emblema">
+            <h1>Xhopii</h1>
+        </div>
+        <a href="/view/login.html">
+            <p>Sair</p>
+        </a>
+    </header>
+    <nav class="navegacao-principal">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./cadastro.html">Cadastrar Cliente</a></li>
+            <li><a href="./cadastro_funcionario.html">Cadastrar Funcionário</a></li>
+            <li><a href="./cadastrar_produto.html">Cadastrar Produto</a></li>
+            <li><a href="./visualizar-clientes.html">Ver Clientes</a></li>
+            <li><a href="#">Ver Funcionários</a></li>
+            <li><a href="./visualizar-produtos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="secao-clientes">
+            <h2>Lista de Clientes</h2>
+
+            <div class="form-adicionar-cliente">
+                <h3>Adicionar Novo Cliente</h3>
+                <form id="formAdicionarCliente">
+                    <input type="text" id="nomeCliente" placeholder="Nome" required>
+                    <input type="email" id="emailCliente" placeholder="Email" required>
+                    <input type="tel" id="telefoneCliente" placeholder="Telefone" required>
+                    <input type="text" id="enderecoCliente" placeholder="Endereço" required>
+                    <button type="submit" class="botao-adicionar">Adicionar Cliente</button>
+                </form>
+            </div>
+
+            <div class="tabela-clientes-container">
+                <table class="tabela-clientes">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Endereço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaCorpoClientes">
+                        <tr>
+                            <td>1</td>
+                            <td>João Silva</td>
+                            <td>joao.silva@email.com</td>
+                            <td>(11) 98765-4321</td>
+                            <td>Rua A, 123 - Centro</td>
+                            <td class="botoes-acao">
+                                <button class="botao-editar">Editar</button>
+                                <button class="botao-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Maria Oliveira</td>
+                            <td>maria.oliver@email.com</td>
+                            <td>(21) 91234-5678</td>
+                            <td>Av. B, 456 - Copacabana</td>
+                            <td class="botoes-acao">
+                                <button class="botao-editar">Editar</button>
+                                <button class="botao-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pedro Souza</td>
+                            <td>pedro.souza@email.com</td>
+                            <td>(31) 99887-7665</td>
+                            <td>Travessa C, 789 - Savassi</td>
+                            <td class="botoes-acao">
+                                <button class="botao-editar">Editar</button>
+                                <button class="botao-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ana Costa</td>
+                            <td>ana.costa@email.com</td>
+                            <td>(41) 95544-3322</td>
+                            <td>Alameda D, 101 - Batel</td>
+                            <td class="botoes-acao">
+                                <button class="botao-editar">Editar</button>
+                                <button class="botao-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Carlos Santos</td>
+                            <td>carlos.santos@email.com</td>
+                            <td>(51) 91122-3344</td>
+                            <td>Rua E, 202 - Moinhos de Vento</td>
+                            <td class="botoes-acao">
+                                <button class="botao-editar">Editar</button>
+                                <button class="botao-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <ansid>
+        <section class="blocos-informacao">
+            <div class="bloco-info">
+                <h5>ATENDIMENTO AO CLIENTE</h5>
+                <ul>
+                    <li><a href="#">Cental de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Médotos de Pagamento</a></li>
+                    <li><a href="#">Garantia Xhopii</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div class="bloco-info">
+                <h5>SOBRE O XHOPII</h5>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Políticas Xhopii</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Aliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpago</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </div>
+            <div class="bloco-info">
+                <h5>PAGAMENTO</h5>
+                <div class="opcoes-pagamento">
+                    <img class="icone-pagamento" src="../assets/img/logo-pix.png" alt="Logo Pix">
+                    <img class="icone-pagamento" src="../assets/img/logo-boleto.png" alt="Logo Boleto">
+                    <img class="icone-pagamento" src="../assets/img/logo-american-express.png" alt="Logo American Express">
+                    <img class="icone-pagamento" src="../assets/img/logo-visa.png" alt="Logo Visa">
+                    <img class="icone-pagamento" src="../assets/img/logo-mastercard.png" alt="Logo Mastercard">
+                    <img class="icone-pagamento" src="../assets/img/logo-hipercard.png" alt="Logo Hipercard">
+                    <img class="icone-pagamento" src="../assets/img/logo-elo.png" alt="Logo Elo">
+                </div>
+            </div>
+            <div class="bloco-info">
+                <H5>SIGA-NOS</H5>
+                <div class="icones-sociais">
+                    <img class="icone-social" src="../assets/img/logo-instagram.png" alt="Instagram">
+                    <p>Instagram</p>
+                </div>
+                <div class="icones-sociais">
+                    <img class="icone-social" src="../assets/img/logo-twitter.png" alt="Twitter">
+                    <p>Twitter</p>
+                </div>
+                <div class="icones-sociais">
+                    <img class="icone-social" src="../assets/img/logo-facebook.png" alt="Facebook">
+                    <p>Facebook</p>
+                </div>
+                <div class="icones-sociais">
+                    <img class="icone-social" src="../assets/img/logo-youtube.png" alt="YouTube">
+                    <p>YouTube</p>
+                </div>
+                <div class="icones-sociais">
+                    <img class="icone-social" src="../assets/img/logo-linkedln.png" alt="Linkedin">
+                    <p>Linkedin</p>
+                </div>
+            </div>
+            <div class="bloco-info">
+                <H5>BAIXE NOSSO APP</H5>
+                <img src="../assets/img/qr-code.png" class="loja-app" alt="QR Code">
+                <img src="../assets/img/logo-google-play.png" class="loja-app" alt="Google Play">
+                <img src="../assets/img/logo-store-apple.png" class="loja-app" alt="Apple Store">
+            </div>
+        </section>
+    </ansid>
+    <footer class="rodape">
+        <hr>
+        <p>ⓒ 2023 Xhopii. Todos os direitos acadêmicos reservados.</p>
+    </footer>
+
+    <script src="../assets/visualizar-clientes.js"></script>
+</body>
+</html>

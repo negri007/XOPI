@@ -1,0 +1,126 @@
+.secao-clientes {
+    width: 80%;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.secao-clientes h2 {
+    color: rgb(251, 86, 48);
+    margin-bottom: 2em;
+}
+
+.form-adicionar-cliente {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-adicionar-cliente h3 {
+    color: rgb(251, 86, 48);
+    margin-bottom: 1.5em;
+}
+
+.form-adicionar-cliente form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.form-adicionar-cliente input[type="text"],
+.form-adicionar-cliente input[type="email"],
+.form-adicionar-cliente input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1 1 calc(33% - 30px);
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.form-adicionar-cliente .botao-adicionar {
+    background-color: rgb(251, 86, 48);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    flex-grow: 1; 
+    max-width: 250px;
+}
+
+.form-adicionar-cliente .botao-adicionar:hover {
+    background-color: rgb(220, 70, 40);
+}
+
+
+.tabela-clientes-container {
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tabela-clientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-clientes th,
+.tabela-clientes td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabela-clientes th {
+    background-color: rgb(251, 86, 48);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabela-clientes tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabela-clientes tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabela-clientes .botoes-acao {
+    white-space: nowrap;
+}
+
+.botao-editar,
+.botao-excluir {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.botao-editar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.botao-editar:hover {
+    background-color: #45a049;
+}
+
+.botao-excluir {
+    background-color: #f44336;
+    color: white;
+}
+
+.botao-excluir:hover {
+    background-color: #da190b;
+}
