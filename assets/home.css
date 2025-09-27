@@ -13,7 +13,7 @@ a{
 header {
     width: 100%;
     background-color: rgb(251, 86, 48);
-    height: 4.5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +57,7 @@ header p {
     list-style: none;
 }
 .navegacao-principal ul li a {
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     text-align: center;
     color: white;

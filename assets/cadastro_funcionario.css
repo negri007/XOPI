@@ -1,83 +1,72 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
-
-body{
-    background-color: rgb(195 195 195);;
+body {
+    line-height: 1.2;
 }
-
-header .container{
-    height: 5.5em;
-    background-color: orangered;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-header .logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 5em;
-    position: absolute;
-    margin-right: 104em;
-    
-}
-
-header .logo img{
-    width: 4.2em;
-    height: 4.2em;
-    position: relative;
-    margin-bottom: 0.6em;
-    
-}
-
-header .h1Logo{
-    color: white;
-    margin-bottom: 0.05em;
-    font-size: 3em;
-    position: relative;
-    margin-top: 0.55em;
-    margin-left: 0.1em;
-}
-
-header .container a{
-    color: white;
+a{
     text-decoration: none;
-    margin-right: 1.5em;
-    font-weight: bold;
-    font-size: 1.5em;
+    color: black;
 }
-
-nav{
-    height: 3.6em;
-    background-color: rgb(251 119 48);
+header {
+    width: 100%;
+    background-color: rgb(251, 86, 48);
+    height: 4rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
-
-ul{
-    display: flex;
     justify-content: space-between;
-    width: 80em;
 }
-
-li{
+header div {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 3%;
+}
+header img {
+    height: 60px;
+}
+header h1 {
+    color: white;
+    margin-left: 5%;
+    cursor: pointer;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+header a {
+    text-decoration: none;
+}
+header p {
+    color: white;
+    margin-right: 1.5vw;
+    font-size: 20px;
+}
+.navegacao-principal ul {
+    background-color: #fb7730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    line-height: 1.15;
+}
+.navegacao-principal ul li {
     list-style: none;
 }
-
-li a{
+.navegacao-principal ul li a {
+    font-size: 14px;
     text-decoration: none;
+    text-align: center;
     color: white;
-    font-size: 1.3em;
+    margin: 16px;
+    display: block;
+}
+.navegacao-principal ul li a:hover {
+    background-color: rgb(251, 86, 48);
+    transition: 0.5s;
 }
 
 section{

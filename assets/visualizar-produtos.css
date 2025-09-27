@@ -13,27 +13,23 @@ a {
     text-decoration: none;
     color: black;
 }
-
-.page-header {
+header {
     width: 100%;
     background-color: rgb(251, 86, 48);
-    height: 4.5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.page-header .header-brand {
+header div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-left: 3%;
 }
-
-.page-header .header-brand img {
+header img {
     height: 60px;
 }
-
-.page-header .header-brand h1 {
+header h1 {
     color: white;
     margin-left: 5%;
     cursor: pointer;
@@ -42,18 +38,15 @@ a {
     line-height: 1.2;
     font-size: 2rem;
 }
-
-.page-header a {
+header a {
     text-decoration: none;
 }
-
-.page-header p {
+header p {
     color: white;
     margin-right: 1.5vw;
     font-size: 20px;
 }
-
-.main-navigation .nav-list {
+.navegacao-principal ul {
     background-color: #fb7730;
     display: flex;
     justify-content: center;
@@ -63,25 +56,22 @@ a {
     padding: 0;
     line-height: 1.15;
 }
-
-.main-navigation .nav-list .nav-item {
+.navegacao-principal ul li {
     list-style: none;
 }
-
-.main-navigation .nav-list .nav-item a {
-    font-size: 18px;
+.navegacao-principal ul li a {
+    font-size: 14px;
     text-decoration: none;
     text-align: center;
     color: white;
-    padding: 14px;
+    margin: 16px;
     display: block;
-
 }
-
-.main-navigation .nav-list .nav-item a:hover {
+.navegacao-principal ul li a:hover {
     background-color: rgb(251, 86, 48);
     transition: 0.5s;
 }
+
 
 .product-grid {
     display: grid;

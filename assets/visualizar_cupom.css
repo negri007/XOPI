@@ -1,76 +1,67 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
-
 body {
-  background-color: #f2f2f2;
+    line-height: 1.2;
 }
 
 header .container {
-  height: 5.5em;
-  background-color:rgb(251, 86, 48);;
   display: flex;
-  flex-direction: row;
+  background-color: rgb(251, 86, 48);
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 2em;
+  width: 100%;
+  padding: 0 2%;
 }
+header .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-header .logo {
-  display: flex;
-  align-items: center;
 }
-
 header .logo img {
-  width: 4.2em;
-  height: 4.2em;
-  margin-right: 0.4em;
+    height: 60px;
 }
-
 header .logo h1 {
   color: white;
-  font-size: 2.5em;
-  margin: 0;
-  line-height: 1;
+   font-size: 2rem;
+   font-weight: 500;
+   margin: 0;
 }
-
 header a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-/* Menu principal */
-.menu {
-  background-color:  #fb7730;
-  padding: 0.9em 2em;
+     color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 3vw;
 }
 
-.menu ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 3em;
-  flex-wrap: wrap; /* evita quebra em telas pequenas */
+.navegacao-principal ul {
+    background-color: #fb7730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    line-height: 1.15;
 }
-
-.menu ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  transition: 0.3s;
+.navegacao-principal ul li {
+    list-style: none;
 }
-
-.menu ul li a:hover {
-  background-color: rgb(251, 86, 48);
+.navegacao-principal ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 16px;
+    display: block;
 }
-
+.navegacao-principal ul li a:hover {
+    background-color: rgb(251, 86, 48);
+    transition: 0.5s;
+}
 main {
   width: 80%;
   margin: 2em auto;
