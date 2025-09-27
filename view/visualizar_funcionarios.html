@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="..assets/img/icon-shopee.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/header.css">
+    <link rel="stylesheet" href="/assets/visualizar_funcionarios.css">
+    
+    
+
+
+    <title>Início</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/assets/img/logo.png" alt="emblema">
+            <h1>Xhopii</h1>
+        </div>
+        <a href="/view/login.html">
+            <p>Sair</p>
+        </a>
+    </header>
+    <nav class="navegacao-principal">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./cadastro.html">Cadastrar Cliente</a></li>
+            <li><a href="./cadastro_funcionario.html">Cadastrar Funcionário</a></li>
+            <li><a href="./cadastrar_produto.html">Cadastrar Produto</a></li>
+            <li><a href="./cadastro-cupom.html">Cadastrar Cupom</a></li>
+            <li><a href="./visualizar-clientes.html">Ver Clientes</a></li>
+            <li><a href="./visualizar_funcionarios.html">Ver Funcionários</a></li>
+            <li><a href="./visualizar-produtos.html">Ver Produtos</a></li>
+            <li><a href="./visualizar_cupom.html">Ver Cupom</a></li>
+        </ul>
+    </nav>
+
+    <main class="secao-funcionarios">
+  <div class="topo-funcionarios">
+    <h2>Visualizar Funcionários</h2>
+    <button class="btn-adicionar">+ Cadastrar Funcionário</button>
+  </div>
+
+  <div class="filtros">
+    <input type="text" id="buscaNome" placeholder="Buscar por nome...">
+    <select id="filtroStatus">
+      <option value="">Todos</option>
+      <option value="ativo">Ativos</option>
+      <option value="inativo">Inativos</option>
+    </select>
+  </div>
+
+  <table class="tabela-funcionarios">
+    <thead>
+      <tr>
+        <th>Avatar</th>
+        <th>Nome</th>
+        <th>Cargo</th>
+        <th>Departamento</th>
+        <th>Admissão</th>
+        <th>Status</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="corpoTabela">
+      <!-- preenchido pelo JS -->
+    </tbody>
+  </table>
+
+  <div id="mensagem-vazio" class="msg-vazio" style="display:none;">
+    Nenhum funcionário encontrado.
+  </div>
+</main>
+
+
+    <ansid>
+    <section class="blocos-informacao">
+        <div class="bloco-info">
+                <h5>ATENDIMENTO AO CLIENTE</h5>
+                <ul>
+                    <li><a href="#">Cental de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Médotos de Pagamento</a></li>
+                    <li><a href="#">Garantia Xhopii</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </div>
+
+        <div class="bloco-info">
+              <h5>SOBRE O XHOPII</h5>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Políticas Xhopii</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Aliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpago</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </div>
+
+
+        <div class="bloco-info">
+            <h5>PAGAMENTO</h5>
+            <div class="opcoes-pagamento">
+                <img class="icone-pagamento" src="/assets/img/logo-pix.png">
+
+                <img class="icone-pagamento" src="/assets/img/logo-boleto.png">
+
+                <img class="icone-pagamento" src="/assets/img/logo-american-express.png">
+
+                <img class="icone-pagamento" src="/assets/img/logo-visa.png">
+
+                <img class="icone-pagamento" src="/assets/img/logo-mastercard.png">
+
+                <img class="icone-pagamento" src="/assets/img/logo-hipercard.png">
+
+                <img class="icone-pagamento" src="/assets/img/logo-elo.png">
+            </div>
+        </div>
+
+        <div class="bloco-info">
+            <H5>SIGA-NOS</H5>
+            <div class="icones-sociais">
+                <img class="icone-social" src="/assets/img/logo-instagram.png">
+                <p>Instagram</p>
+            </div>
+
+            <div class="icones-sociais">
+                <img class="icone-social" src="/assets/img/logo-twitter.png">
+                <p>Twitter</p>
+            </div>
+
+            <div class="icones-sociais">
+                <img class="icone-social" src="/assets/img/logo-facebook.png">
+                <p>Facebook</p>
+            </div>
+
+            <div class="icones-sociais">
+                <img class="icone-social" src="/assets/img/logo-youtube.png">
+                <p>YouTube</p>
+            </div>
+
+            <div class="icones-sociais">
+                <img class="icone-social" src="/assets/img/logo-linkedln.png">
+                <p>Linkedin</p>
+            </div>
+        </div>
+
+        <div class="bloco-info">
+            <H5>BAIXE NOSSO APP</H5>
+
+            <img src="/assets/img/qr-code.png" class="loja-app">
+
+            <img src="/assets/img/logo-google-play.png" class="loja-app">
+
+            <img src="/assets/img/logo-store-apple.png" class="loja-app">
+        </div>
+    </section>
+</ansid>
+
+<footer class="rodape">
+    <hr>
+    <p>ⓒ 2023 Xhopii. Todos os direitos acadêmicos reservados.</p>
+</footer>
+<script src="/assets/visualizar_funcionario.js" defer></script>
+</body>
+</html>

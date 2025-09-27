@@ -61,7 +61,7 @@ header p {
     text-decoration: none;
     text-align: center;
     color: white;
-    padding: 14px;
+    margin: 16px;
     display: block;
 }
 .navegacao-principal ul li a:hover {
@@ -70,7 +70,7 @@ header p {
 }
 
 .secao-carrossel {
-    width: 70%px;   
+    width: 65%;   
     max-width: 1700px;    
     margin: 5em auto;   
 }

@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header .container {
+  height: 5.5em;
+  background-color:rgb(251, 86, 48);;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 4.2em;
+  height: 4.2em;
+  margin-right: 0.4em;
+}
+
+header .logo h1 {
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+  line-height: 1;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+/* Menu principal */
+.menu {
+  background-color:  #fb7730;
+  padding: 0.9em 2em;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap; /* evita quebra em telas pequenas */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(251, 86, 48);
+}
+
+.secao-funcionarios {
+  width: 95%;
+  max-width: 1200px;
+  margin: 2em auto;
+  background: white;
+  padding: 1.5em;
+  border-radius: 0.6em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.topo-funcionarios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.topo-funcionarios h2 {
+  color: orangered;
+  font-size: 1.6em;
+}
+
+.btn-adicionar {
+  background: orangered;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.2s;
+}
+.btn-adicionar:hover {
+  background: rgb(230, 90, 20);
+}
+
+.filtros {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.2em;
+}
+
+.filtros input, .filtros select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.tabela-funcionarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.tabela-funcionarios th, .tabela-funcionarios td {
+  padding: 0.9em;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.tabela-funcionarios th {
+  background-color: rgb(251,119,48);
+  color: white;
+}
+
+.tabela-funcionarios img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.tabela-funcionarios button {
+  padding: 0.3em 0.8em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5em;
+  font-size: 0.85em;
+}
+.tabela-funcionarios button:nth-child(1) {
+  background: #007bff;
+  color: white;
+}
+.tabela-funcionarios button:nth-child(2) {
+  background: #dc3545;
+  color: white;
+}
+
+.msg-vazio {
+  text-align: center;
+  color: #777;
+  padding: 2em 0;
+}
+
+
+ansid {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #eaeaea;
+}
+ansid section.blocos-informacao {
+    width: 85%;
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+}
+ansid div.bloco-info {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+ansid div.bloco-info h5 {
+    margin-bottom: 1rem;
+}
+ansid div.bloco-info ul {
+    padding: 0;
+}
+ansid div.bloco-info ul li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+ansid div.bloco-info a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    font-size: 0.8rem;
+}
+ansid div.opcoes-pagamento {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 20px;
+}
+ansid div.opcoes-pagamento img {
+    width: 2.3rem;
+    height: auto;
+}
+ansid div.icones-sociais {
+    display: flex;
+}
+ansid div.icones-sociais img {
+    width: 1rem;
+    height: auto;
+}
+ansid div.icones-sociais p {
+    margin-left: 5px;
+}
+ansid div.icones-sociais:not(:last-child) {
+    margin-bottom: 7px;
+}
+ansid div.bloco-info img.loja-app {
+    width: 4rem;
+    height: auto;
+}
+ansid div.bloco-info img.loja-app:last-child {
+    margin-left: 3px;
+}
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer hr {
+    display: block;
+    width: 85%;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 0px;
+}
+h5 {
+    font-size: 13.28px;
+    font-weight: bold;
+}
