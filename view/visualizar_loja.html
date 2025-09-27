@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Loja</title>
+  <link rel="stylesheet" href="/assets/visualizar_loja.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="/assets/img/logo.png" alt="Logo Xhopii">
+        <h1>Xhopii</h1>
+      </div>
+      <a href="/view/login.html">Sair</a>
+    </div>
+  </header>
+  <nav class="menu">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastrar Cliente</a></li>
+        <li><a href="cadastro_funcionario.html">Cadastrar Funcionário</a></li>
+        <li><a href="cadastrar_produto.html">Cadastrar Produto</a></li>
+        <li><a href="cadastro-cupom.html">Cadastrar Cupom</a></li>
+        <li><a href="visualizar-clientes.html">Ver Clientes</a></li>
+        <li><a href="v.html">Ver Funcionários</a></li>
+        <li><a href="visualizar-produtos.html">Ver Produtos</a></li>
+        <li><a href="visualizar_cupom.html">Ver Cupons</a></li>
+    </ul>
+  </nav>
+  <section class="banner-loja">
+    <img src="/assets/img/banner-1.png" alt="Banner da Loja">
+  </section>
+
+  
+  <section class="info-loja">
+    <img src="/assets/img/perfil.png" alt="Logo da Loja" class="logo-loja">
+    <div class="detalhes">
+
+      <div class="coluna1">
+      <h2 class="titulo">Executive imports</h2>
+      <p>⭐ 4.8 (230 avaliações)</p>
+      <p>📍 São Paulo - SP</p>
+      </div> 
+      <div class="coluna2">
+      <p><img src="/assets/img/produto0.png" alt="" class="icone-info">Produtos: 120 </p>
+      <p><img src="/assets/img/certo.png" alt="" class="icone-info">Vendidos: 3.450 produtos</p> 
+      <p><img src="/assets/img/data.png" alt="" class="icone-info">Ativo desde: 15/03/2018</p> 
+      <p><img src="/assets/img/seguir.png" alt="" class="icone-destaque">Seguidores: 1.500</p>
+      </div>
+    </div>
+    <button id="seguirBtn">Seguir</button>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="categorias">
+    <ul>
+      <li><a href="#">Todos</a></li>
+      <li><a href="#">Roupas</a></li>
+      <li><a href="#">Acessórios</a></li>
+      <li><a href="#">Eletrônicos</a></li>
+    </ul>
+  </section>
+
+  <!-- PRODUTOS -->
+  <main>
+    <h2>Produtos da Loja</h2>
+    <div class="lista-produtos" id="listaProdutos">
+      <!-- Produtos via JS -->
+    </div>
+  </main>
+
+  <!-- SOBRE A LOJA -->
+  <section class="sobre-loja">
+    <h2>Sobre a Loja</h2>
+    <p>
+      Bem-vindo à nossa loja! Aqui você encontra produtos de qualidade com preços acessíveis.
+      Trabalhamos com envios rápidos e garantia de satisfação. Aproveite as promoções exclusivas!
+    </p>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 Loja Exemplo - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/assets/visualizar_loja.js"></script>
+</body>
