@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header .container {
+  height: 5.5em;
+  background-color:rgb(251, 86, 48);;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 4.2em;
+  height: 4.2em;
+  margin-right: 0.4em;
+}
+
+header .logo h1 {
+  color: white;
+  font-size: 2.5em;
+  margin: 0;
+  line-height: 1;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+/* Menu principal */
+.menu {
+  background-color:  #fb7730;
+  padding: 0.9em 2em;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap; /* evita quebra em telas pequenas */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(251, 86, 48);
+}
+
+main {
+  width: 80%;
+  margin: 2em auto;
+}
+
+h2 {
+  margin-bottom: 1em;
+  color: orangered;
+  font-size: 2em;
+  text-align: center;
+}
+
+.lista-cupons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cupom {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 220px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+.conteudo-cupom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+   
+}
+.cupom .icone{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 4rem;
+
+}
+.botoes-cupom {
+  display: flex;
+  justify-content: space-between; /* mantém um botão à esquerda e outro à direita */
+  margin-top: 15px;
+  gap: 20px; 
+  width: 100%; 
+  
+}
+
+.botoes-cupom button {
+  flex: 1;
+  max-width: 120px; 
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: white;
+  border: none;
+}
+
+
+.btn-excluir {
+  background-color: #e74c3c;
+  margin-left: 1em;
+}
+
+
+.btn-enviar {
+  background-color: #2ecc71;
+  margin-right:1em ;
+}
+
+.cupom:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+}
+
+.cupom h3 {
+  color: orangered;
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+
+.cupom p {
+  margin: 0.3em 0;
+  font-size: 1.05em;
+  color: #444;
+}
+ansid {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #eaeaea;
+}
+ansid section.blocos-informacao {
+    width: 68%;
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+}
+ansid div.bloco-info {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+ansid div.bloco-info h5 {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+ansid div.bloco-info ul {
+    padding: 0;
+}
+ansid div.bloco-info ul li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+ansid div.bloco-info a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    font-size: 0.8rem;
+    opacity: 80%;
+}
+ansid div.opcoes-pagamento {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 10px;
+}
+ansid div.opcoes-pagamento img {
+    width: 3rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+ansid div.icones-sociais {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+ansid div.icones-sociais img {
+    width: 1.2rem;
+    height: auto;
+    margin-bottom: 0.3rem;
+    
+}
+ansid div.icones-sociais p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+
+}
+ansid div.icones-sociais:not(:last-child) {
+    margin-bottom: 7px;
+}
+ansid div.bloco-info img.loja-app {
+    width: 4rem;
+    height: auto;
+    margin-bottom: 1.4rem;
+
+
+}
+ansid div.bloco-info img.loja-app:last-child {
+    margin-left: 3px;
+}
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer hr {
+    display: block;
+    width: 67%;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 0px;
+    opacity: 0.8;
+}
+h5 {
+    font-size: 13.28px;
+    font-weight: bold;
+}

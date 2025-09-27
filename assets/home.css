@@ -20,7 +20,7 @@ header {
 }
 header div {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-left: 3%;
 }
 header img {
