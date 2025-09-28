@@ -103,7 +103,15 @@ header p {
     color: rgb(251, 86, 48);
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+.descobertas-frete p a{
+    color: orangered;
+    text-decoration: none;
 
+}
+.descobertas-frete p a:hover {
+  color: darkorange;
+  text-decoration: underline;
 }
 #separador-descobertas {
     border: solid rgb(251, 86, 48) 1px;
