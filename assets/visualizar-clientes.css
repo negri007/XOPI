@@ -124,3 +124,91 @@
 .botao-excluir:hover {
     background-color: #da190b;
 }
+ansid {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #eaeaea;
+}
+ansid section.blocos-informacao {
+    width: 85%;
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+}
+ansid div.bloco-info {
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+ansid div.bloco-info h5 {
+    margin-bottom: 1rem;
+}
+ansid div.bloco-info ul {
+    padding: 0;
+}
+ansid div.bloco-info ul li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+ansid div.bloco-info a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    font-size: 0.8rem;
+}
+ansid div.opcoes-pagamento {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 20px;
+}
+ansid div.opcoes-pagamento img {
+    width: 2.3rem;
+    height: auto;
+}
+ansid div.icones-sociais {
+    display: flex;
+}
+ansid div.icones-sociais img {
+    width: 1rem;
+    height: auto;
+}
+ansid div.icones-sociais p {
+    margin-left: 5px;
+}
+ansid div.icones-sociais:not(:last-child) {
+    margin-bottom: 7px;
+}
+ansid div.bloco-info img.loja-app {
+    width: 4rem;
+    height: auto;
+}
+ansid div.bloco-info img.loja-app:last-child {
+    margin-left: 3px;
+}
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer hr {
+    display: block;
+    width: 85%;
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 0px;
+}
+h5 {
+    font-size: 13.28px;
+    font-weight: bold;
+}
