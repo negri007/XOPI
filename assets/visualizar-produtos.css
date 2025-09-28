@@ -165,6 +165,7 @@ header p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 0 auto;
+
 }
 
 .site-info-footer .info-box-column {
@@ -172,7 +173,7 @@ header p {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .site-info-footer .info-box-column h5 {
@@ -181,14 +182,16 @@ header p {
 
 .site-info-footer .info-box-column .info-list {
     padding: 0;
+    opacity: 60%;
+    
 }
 
 .site-info-footer .info-box-column .info-list li {
     list-style: none;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
-.site-info-footer .info-box-column .info-list a {
+.site-info-footer .info-box-column .info-list li a {
     text-decoration: none;
     color: black;
     padding: 0;
@@ -196,11 +199,12 @@ header p {
 }
 
 .site-info-footer .payment-icons-container {
-    width: 50%;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 
 .site-info-footer .payment-icons-container .payment-method-icon {
@@ -210,24 +214,29 @@ header p {
 
 .site-info-footer .social-media-entry {
     display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    
 }
 
 .site-info-footer .social-media-entry .social-media-icon {
     width: 1rem;
     height: auto;
+
 }
+
 
 .site-info-footer .social-media-entry p {
     margin-left: 5px;
 }
 
-.site-info-footer .social-media-entry:not(:last-child) {
-    margin-bottom: 7px;
-}
+
 
 .site-info-footer .info-box-column .app-download-image {
     width: 4rem;
     height: auto;
+    margin-bottom: 1.5em;
 }
 
 .site-info-footer .info-box-column .app-download-image:last-child {
@@ -252,10 +261,12 @@ header p {
 
 
 p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
+    opacity: 60%;
 }
 
 h5 {
     font-size: 13.28px;
     font-weight: bold;
+    opacity: 80%;
 }
